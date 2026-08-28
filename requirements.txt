@@ -1,0 +1,13 @@
+# ---- Required for face login / face registration (face_encode.py, face_login.py) ----
+numpy>=1.26,<2.0
+opencv-python>=4.9
+deepface>=0.0.93
+scipy>=1.11
+tensorflow>=2.15          # deepface's default backend; large download, CPU build is fine
+
+# ---- Optional, for the ML-assisted ATS scorer (ats_scorer.py) ----
+# The scorer works fine without these (falls back to plain keyword overlap),
+# but if you want the blended ML score, install these and provide your own
+# trained ats_model.pkl / tfidf_vectorizer.pkl next to ats_scorer.py.
+scikit-learn>=1.4
+joblib>=1.3
