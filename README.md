@@ -16,8 +16,8 @@ roster-app/
 ├── seed.sql               # Sample data + demo login
 ├── package.json
 ├── requirements.txt       # Python deps (face login + optional ATS ML)
-├── .env.example           # Copy to .env and fill in
-└── uploads/                # Created automatically; stores uploaded résumés
+├──.env                   # environment file
+└── uploads/               # Created automatically; stores uploaded résumés
 ```
 
 ## 1. Prerequisites
